@@ -32,14 +32,69 @@ import {createRoot} from "react-dom/client";
 
 // !== JSX == javaScript XML
 // ! ===  it is simple way to create createELement  
-createRoot(document.getElementById("root")).render(
-    <div>
-        <img src="https://media-public.canva.com/MADGyEZRjKc/4/thumbnail_large.jpg" alt="" />
-        <h1>Sky is beautifull</h1>
-        <h2>React developer</h2>
-    </div>
-)
+// createRoot(document.getElementById("root")).render(
+//     <div>
+//         <img src="https://media-public.canva.com/MADGyEZRjKc/4/thumbnail_large.jpg" alt="" />
+//         <h1>Sky is beautifull</h1>
+//         <h2>React developer</h2>
+//     </div>
+// )
 
-let ele =
-<div> hello </div> //$$typeof: Symbol(react.transitional.element), type: 'div', key: null, props: {…}, _owner: null, …}
-console.log(ele);
+// let ele =
+// <div> hello </div> //$$typeof: Symbol(react.transitional.element), type: 'div', key: null, props: {…}, _owner: null, …}
+// console.log(ele);
+
+
+
+// !==creating jsx elements using all rules of jsx 
+// let element = (
+//     <section>
+//         <form>
+//             <label htmlFor="">Name:</label>
+//             <input type="Name" />
+//         </form>
+//         <ul>
+//             <li>list1</li>
+//             <li>list2</li>
+//             <li>list3</li>
+//         </ul>
+//     </section>
+// )
+// createRoot(document.getElementById("root")).render(element)
+
+
+// ! == fragment -- it is method of react and it is avoid the unnessary element for jsx
+// import React from "react";
+// let element = (
+//     <React.Fragment>
+//         <form action="">
+//             <label htmlFor="">Name:</label>
+//             <input type="name" />
+//         </form>
+//         <ul>
+//             <li>list1</li>
+//             <li>list2</li>
+//             <li>list3</li>
+//         </ul>
+//     </React.Fragment>
+// )
+// createRoot(document.getElementById("root")).render(element)
+
+
+
+
+import React from "react";
+let element = (
+    <>
+        <form action="">
+            <label htmlFor="">Name:</label>
+            <input type="name" />
+        </form>
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+        </ul>
+    </>
+)
+createRoot(document.getElementById("root")).render(element)
