@@ -54,9 +54,9 @@ import {createRoot} from "react-dom/client";
 //             <input type="Name" />
 //         </form>
 //         <ul>
-//             <li>list1</li>
-//             <li>list2</li>
-//             <li>list3</li>
+//             <li className='list'>list1</li>
+//             <li className="list">list2</li>
+//             <li className="list">list3</li>
 //         </ul>
 //     </section>
 // )
@@ -72,9 +72,9 @@ import {createRoot} from "react-dom/client";
 //             <input type="name" />
 //         </form>
 //         <ul>
-//             <li>list1</li>
-//             <li>list2</li>
-//             <li>list3</li>
+//             <li className="list">list1</li>
+//             <li className="list">list2</li>
+//             <li className="list">list3</li>
 //         </ul>
 //     </React.Fragment>
 // )
@@ -84,6 +84,7 @@ import {createRoot} from "react-dom/client";
 
 
 import React from "react";
+import "./index.css"
 let element = (
     <>
         <form action="">
@@ -91,9 +92,9 @@ let element = (
             <input type="name" />
         </form>
         <ul>
-            <li>list1</li>
-            <li>list2</li>
-            <li>list3</li>
+            <li className="list">list1</li>
+            <li className="list">list2</li>
+            <li className="list">list3</li>
         </ul>
     </>
 )
