@@ -39,3 +39,7 @@ createRoot(document.getElementById("root")).render(
         <h2>React developer</h2>
     </div>
 )
+
+let ele =
+<div> hello </div> //$$typeof: Symbol(react.transitional.element), type: 'div', key: null, props: {…}, _owner: null, …}
+console.log(ele);
