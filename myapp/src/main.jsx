@@ -23,9 +23,19 @@
 
 // ! --- creating multiple elements inside one createroot 
 import {createRoot} from "react-dom/client";
-import { createElement } from "react";
-createRoot(document.getElementById("root")).render(createElement("div",{style:{border:"2px solid black",width:"300px",display:"flex",flexDirection:"column"},alignItems:"center"},
-    createElement("img",{src:"https://media-public.canva.com/MADGyEZRjKc/4/thumbnail_large.jpg"}),
-    createElement("h1",null,"sky is beautiful"),
-    createElement("h2",null,"sky❤️")
-))
+// import { createElement } from "react";
+// createRoot(document.getElementById("root")).render(createElement("div",{style:{border:"2px solid black",width:"300px",display:"flex",flexDirection:"column"},alignItems:"center"},
+//     createElement("img",{src:"https://media-public.canva.com/MADGyEZRjKc/4/thumbnail_large.jpg"}),
+//     createElement("h1",null,"sky is beautiful"),
+//     createElement("h2",null,"sky❤️")
+// ))
+
+// !== JSX == javaScript XML
+// ! ===  it is simple way to create createELement  
+createRoot(document.getElementById("root")).render(
+    <div>
+        <img src="https://media-public.canva.com/MADGyEZRjKc/4/thumbnail_large.jpg" alt="" />
+        <h1>Sky is beautifull</h1>
+        <h2>React developer</h2>
+    </div>
+)
