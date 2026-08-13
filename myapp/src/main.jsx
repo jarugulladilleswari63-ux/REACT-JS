@@ -22,7 +22,7 @@
 
 
 // ! --- creating multiple elements inside one createroot 
-import {createRoot} from "react-dom/client";
+// import {createRoot} from "react-dom/client";
 // import { createElement } from "react";
 // createRoot(document.getElementById("root")).render(createElement("div",{style:{border:"2px solid black",width:"300px",display:"flex",flexDirection:"column"},alignItems:"center"},
 //     createElement("img",{src:"https://media-public.canva.com/MADGyEZRjKc/4/thumbnail_large.jpg"}),
@@ -83,19 +83,49 @@ import {createRoot} from "react-dom/client";
 
 
 
+// import React from "react";
+// import "./index.css"
+// let element = (
+//     <>
+//         <form action="">
+//             <label htmlFor="">Name:</label>
+//             <input type="name" />
+//         </form>
+//         <ul>
+//             <li className="list">list1</li>
+//             <li className="list">list2</li>
+//             <li className="list">list3</li>
+//         </ul>
+//     </>
+// )
+// createRoot(document.getElementById("root")).render(element)
+
+
+
+
+
+
+// ! == COMPONENTS
+// !=== CLASS BASED COMPONENTS
+
+import { Component } from "react";
+import { createRoot } from "react-dom/client";
 import React from "react";
-import "./index.css"
-let element = (
-    <>
-        <form action="">
-            <label htmlFor="">Name:</label>
-            <input type="name" />
-        </form>
-        <ul>
-            <li className="list">list1</li>
-            <li className="list">list2</li>
-            <li className="list">list3</li>
-        </ul>
-    </>
+class Home extends Component{
+    render(){
+        return <h1>this is class based component</h1>
+    }
+}
+
+
+class Card extends Component{
+    render(){
+        return <h4>This is CBC</h4>
+    }
+}
+createRoot(document.getElementById("root")).render(
+    <React.Fragment>
+        <Home></Home>
+        <Card></Card>
+    </React.Fragment>
 )
-createRoot(document.getElementById("root")).render(element)
