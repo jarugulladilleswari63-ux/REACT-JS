@@ -108,24 +108,70 @@
 // ! == COMPONENTS
 // !=== CLASS BASED COMPONENTS
 
-import { Component } from "react";
+// import { Component } from "react";
+// import { createRoot } from "react-dom/client";
+// import React from "react";
+// class Home extends Component{
+//     render(){
+//         return <h1>this is class based component</h1>
+//     }
+// }
+// class Card extends Component{
+//     render(){
+//         return <h4>This is CBC</h4>
+//     }
+// }
+
+// class Counter extends Component {
+//     constructor() {
+//         super();
+
+//         this.state = {
+//             count: 0
+//         };
+//     }
+
+//     increment = () => {
+//         this.setState({
+//             count: this.state.count + 1
+//         });
+//     };
+
+//     render() {
+//         return (
+//             <>
+//                 <h1>Count: {this.state.count}</h1>
+
+//                 <button onClick={this.increment}>
+//                     INC
+//                 </button>
+//             </>
+//         );
+//     }
+// }
+// createRoot(document.getElementById("root")).render(
+//     <React.Fragment>
+//         <Home></Home>
+//         <Card></Card>
+//         <Counter></Counter>
+//     </React.Fragment>
+// )
+
+
+
+// !== FUNCTION BASED COMPONENT 
+//  in FBC ,there is no state and lifecycle methods
+//  if we want state , we can use useStateHook
+// if we want lifecycle menthod , we can use useEffectHook
+//  always use function name start with "Uppercase"
 import { createRoot } from "react-dom/client";
-import React from "react";
-class Home extends Component{
-    render(){
-        return <h1>this is class based component</h1>
-    }
+function Greet(){
+    return <h2>Good Morning</h2>
 }
-
-
-class Card extends Component{
-    render(){
-        return <h4>This is CBC</h4>
-    }
+function Fun(){
+    return <h5>Hello React JS</h5>
 }
-createRoot(document.getElementById("root")).render(
-    <React.Fragment>
-        <Home></Home>
-        <Card></Card>
-    </React.Fragment>
-)
+createRoot(document.getElementById("root")).render(<>
+<Greet></Greet>
+<Fun/>
+</>)
