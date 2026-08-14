@@ -165,24 +165,31 @@
 // if we want lifecycle menthod , we can use useEffectHook
 //  always use function name start with "Uppercase"
 // we can use JSX expression to get the data dynamically
-import { createRoot } from "react-dom/client";
-function Greet(){
-    let user = "laddu"
-    console.log(user);
-    return <h2>Good Morning {user}</h2>
-}
-function Fun(){
-    let a = 7541
-    let b =  7852
-    return (
-        <>
-        <h5>Hello React JS</h5>
-        <h3>Addition of {a} and {b} is {a+b} </h3>
-        </>
-    )
+// import { createRoot } from "react-dom/client";
+// function Greet(){
+//     let user = "laddu"
+//     console.log(user);
+//     return <h2>Good Morning {user}</h2>
+// }
+// function Fun(){
+//     let a = 7541
+//     let b =  7852
+//     return (
+//         <>
+//         <h5>Hello React JS</h5>
+//         <h3>Addition of {a} and {b} is {a+b} </h3>
+//         </>
+//     )
 
-}
+// }
+// createRoot(document.getElementById("root")).render(<>
+// <Greet></Greet>
+// <Fun/>
+// </>)
+
+
+import {createRoot} from "react-dom/client";
+import App from "./App";
 createRoot(document.getElementById("root")).render(<>
-<Greet></Greet>
-<Fun/>
+<App/>
 </>)
