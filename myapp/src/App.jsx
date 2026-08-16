@@ -11,11 +11,13 @@
 
 import React from 'react'
 import  Counter  from './UseState/Counter.jsx'
+import Cart from './UseState/Cart.jsx'
 
 const App = () => {
   return (
     <div>
         <Counter/>
+        <Cart/>
     </div>
   )
 }
