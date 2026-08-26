@@ -26,20 +26,30 @@
 // export default Counter
 
 
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
-const Counter = () => {
-    let [Count,setCount] = useState([])
-    let add=(preCount)=>{
-        return [...preCount,]
-    }
-  return (
-    <div>
-        <h1>Count:{Count}</h1>
-        <button onClick={()=>{add(Count+1)}}>Increment</button>
-    </div>
+// const Counter = () => {
+//     let [Count,setCount] = useState([])
+//     console.log(useState()[1]);
+    
+//     let add=(preCount)=>{
+//         return [...preCount,]
+//     }
+//   return (
+//     <div>
+//         <h1>Count:{Count}</h1>
+//         <button onClick={()=>{add(Count+1)}}>Increment</button>
+//     </div>
 
-  )
-}
+//   )
+// }
 
-export default Counter
+// export default Counter
+// import { useState } from "react";
+// import React, {useState} from "react";
+
+// const Counter = () = >{
+//   let [Count,setCounter] = useState([0])
+//   console.log(useState()[1]);
+  
+// }
